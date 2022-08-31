@@ -1,0 +1,3 @@
+<button *ngIf="!todo.completed" (click)="completeItem(todo)" class="completed">Completed</button>
+<span class="task" [ngClass]="todo.completed ? 'completed' : ''">{{todo.task}}</span>
+<button class="removed" (click)="removeItem(todo)">x</button>

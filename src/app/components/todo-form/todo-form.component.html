@@ -1,0 +1,5 @@
+<p>Enter a new task:</p>
+<form (ngSubmit)="onSubmit()" #form="ngForm">
+    <input type="text" name="newTodo" id="newTodo" placeholder="Add your to-do" [(ngModel)]="newTodo.task" style="width: 98%; font-size: large;">
+    <button type="submit">Add</button>
+</form>

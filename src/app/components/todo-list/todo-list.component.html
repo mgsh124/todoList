@@ -1,0 +1,19 @@
+<h1>To-Do List</h1>
+<p>A place to store your todos</p>
+
+<div style="display: flex;">
+    <input type="text" name="filter" placeholder="Filter your to-dos" [(ngModel)]="filter" (ngModelChange)="doFilter()" style="width: 100%; font-size: large;">
+</div>
+
+<p *ngIf="checkFinish()" style="color: #ff1493;">Congratulation!!! You finished all the jobs!</p>
+
+<div style="margin: 20px auto;">
+    <p *ngFor="let item of todoList; index as i">
+        <span>{{i + 1}}.</span>
+        <app-todo-item [todo]="item" (complete)="doComplete(item)" (remove)="doRemove(item)"></app-todo-item>
+    </p>
+</div>
+
+<div>
+    <app-todo-form (save)="doSave($event)"></app-todo-form>
+</div>

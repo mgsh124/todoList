@@ -1,1 +1,50 @@
 /* You can add global styles to this file, and also import other style files */
+html {
+  background: linear-gradient(to right, #f857a6, #ff5858);
+  font-family: "Open Sans", "Arial";
+  font-weight: 300;
+}
+body {
+  display: flex;
+  align-items: center;
+  max-width: 500px;
+  box-sizing: border-box;
+  margin: 32px auto;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+  background: white;
+  border-radius: 5px;
+}
+.content {
+  width: 100%;
+  padding: 20px;
+}
+button.completed {
+  color: #ff69b4;
+  background: none;
+  border: 1px solid #ff69b4;
+  border-radius: 5px;
+  margin: 0 5px;
+  cursor: pointer;
+}
+.task {
+  margin: 0 5px;
+}
+.task.completed {
+  text-decoration: line-through;
+}
+button.removed {
+  float: right;
+  cursor: pointer;
+  font-size: large;
+  border: none;
+  background: none;
+}
+button[type="submit"] {
+  width: 100%;
+  background: #ff1493;
+  color: white;
+  border: #eee;
+  border-radius: 2px;
+  font-size: large;
+  margin: 10px auto;
+}

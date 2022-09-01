@@ -26,6 +26,10 @@ button.completed {
   margin: 0 5px;
   cursor: pointer;
 }
+button.completed:hover {
+  background-color: #ff69b4;
+  color: #eee;
+}
 .task {
   margin: 0 5px;
 }
@@ -39,6 +43,9 @@ button.removed {
   border: none;
   background: none;
 }
+button.removed:hover {
+  color: #ff69b4;
+}
 button[type="submit"] {
   width: 100%;
   background: #ff1493;
@@ -47,4 +54,8 @@ button[type="submit"] {
   border-radius: 2px;
   font-size: large;
   margin: 10px auto;
+  cursor: pointer;
+}
+button[type="submit"]:hover {
+  background-color: #f857a6;
 }
